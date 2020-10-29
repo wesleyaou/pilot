@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PILOT UI</title>
+    <script src="{{ url_for('static', filename='js/carInfo.js') }}"> </script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/carInfo.css') }}">
+  </head>
+  <body>
+    <div class="topCols">
+      <div id="dateResult"></div>
+      <div id="timeResult"></div>
+      <div id="sysResult"></div>
+    </div>
+    <div class="carInfo">
+      <div id="gas"></div>
+      <div id="speed"></div>
+      <div id="RPM"></div>
+      <div id="load"></div>
+    </div>
+    <div class="carInfoBtn">
+      <input class="button" type="button" value="Home" onclick="location.href='http://localhost:5000/'" />
+    </div>
+  </body>
+  <script>
+    get_carInfo();
+    get_sysInfo();
+    get_time();
+  </script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PILOT UI</title>
+    <script src="{{ url_for('static', filename='js/pilot_script.js') }}"> </script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pilot_style.css') }}">
+  </head>
+  <body>
+<!--
+      <p>Time:</p>
+      <h4 id="timeResult"></h4>
+      <h2>Car Info (temp gas):</h2>
+      <h4 id="carResult"></h4>
+      <h2>Sys Info:</h2>
+      <h4 id="sysResult"></h4>
+//-->
+    <div class="topCols">
+      <div id="dateResult"></div>
+      <div id="timeResult"></div>
+      <div id="sysResult"></div>
+    </div>
+<!--
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'music')">Music</button>
+      <button class="tablinks" onclick="openTab(event, 'car')">Car Info</button>
+      <button class="tablinks" onclick="openTab(event, 'sys')">System </button>
+    </div>
+//-->
+    <div class="musicCols">
+      <div class="carInfoBtn">
+        <input class="button" type="button" value="Car Info" onclick="location.href='http://localhost:5000/carDetails'" />
+      </div>
+      <div>
+        <div class="musInfo">
+          <div id="title"></div>
+          <div id="artist"></div>
+          <div id="album"></div>
+          <div id="controls">
+            <input id="lastTrack" class="button" type="button" value="<<" onclick="lastTrack();" />
+            <input id="ppTrack" class="button" type="button" value=">||" onclick="ppTrack();" />
+            <input id="nextTrack" class="button" type="button" value=">>" onclick="nextTrack();" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    get_time();
+    get_sysInfo();
+    get_musInfo();
+  </script>
+</html>

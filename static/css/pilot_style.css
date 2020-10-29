@@ -1,0 +1,74 @@
+@font-face{
+  font-family:Futura;
+/*  src: url("/home/pi/.fonts/Futura.ttf") */
+}
+
+*{
+  font-family: Futura;
+}
+
+body {
+  display:grid;
+  grid-template-rows: 1fr 8fr;
+  background-color: black;
+  color: white;
+}
+
+.topCols {
+  display:grid;
+  grid-template-columns: 33% 34% 33%;
+  border-bottom: solid;
+  bottom-padding: .5em;
+  border-radius: 5px;
+}
+
+#timeResult {
+  text-align: center;
+}
+
+#sysResult {
+  text-align: right;
+}
+
+.carInfoBtn {
+  justify-items:center;
+}
+
+.musInfo {
+  display:grid;
+  grid-template-rows: auto auto auto;
+  text-align:center;
+  justify-items: center;
+  padding: 1em;
+  font-size: 2em;
+  border-radius: 15px;
+  border-style: solid;
+}
+
+.musicInfo > div {
+  padding:4em;
+}
+
+.musicCols {
+  display:grid;
+  grid-template-columns: 25% 75%;
+  grid-auto-rows: minmax(12em, auto);
+}
+
+.musicCols > div {
+  padding:1em;
+}
+
+.button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  color: black;
+  padding: 1em 2em;
+  text-align: center;
+  transition-duration: 0.2s;
+}
+
+.button:active {
+  background-color: black;
+  color: white;  
