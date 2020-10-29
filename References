@@ -1,0 +1,29 @@
+Bluetooth Speaker
+https://github.com/lukasjapan/bt-speaker/issues/65
+
+Bluetooth control + Metadata
+https://scribles.net/controlling-bluetooth-audio-on-raspberry-pi/
+
+LCD Driving
+https://www.circuitbasics.com/raspberry-pi-i2c-lcd-set-up-and-programming/
+
+USB Audio Card Setup w/ ALSA
+https://raspberrypi.stackexchange.com/questions/80072/how-can-i-use-an-external-usb-sound-card-and-set-it-as-default
+
+Python-OBDII Docs
+https://python-obd.readthedocs.io/en/latest/
+
+RTC Setup
+https://www.raspberrypi-spy.co.uk/2015/05/adding-a-ds3231-real-time-clock-to-the-raspberry-pi/
+
+GPS Setup
+https://raspberrypi.stackexchange.com/questions/547/how-do-i-attach-a-gps-receiver
+
+GPS Standards (Decimal Mins to Decimal Deg)
+https://stackoverflow.com/questions/18442158/latitude-longitude-in-wrong-format-dddmm-mmmm-2832-3396n
+
+Launch Chromium on boot
+https://gist.github.com/obstschale/b9bde4c6abd15687043d0504c41fb350
+
+Fullscreen Chromium rather than kiosk
+https://raspberrypi.stackexchange.com/questions/69204/open-chromium-full-screen-on-start-up#76336
