@@ -1,4 +1,4 @@
-# PILOT AUTO
-An open source car operating system for Raspberry Pi
+# PILOT
+An open source carPC operating system for Raspberry Pi wrriten using Python 3.
 
 
