@@ -1,13 +1,20 @@
+# The bluetooth module used to read track info and provide media control via 
+# the DBUS api. Has potential to add volume control as well. Heavily based
+# off this absolutely incredible script by https://scribles.net/author/max/: 
+# https://scribles.net/controlling-bluetooth-audio-on-raspberry-pi/
+
 import dbus, dbus.mainloop.glib, sys
 from gi.repository import GLib
 import time
 
+# Global variables retrieved by the main function, likely a temporary solution
 title = ''
 album = ''
 artist = ''
 
 state = 'play'
 
+# Function to initialize the DBUS interface
 def initMetadata():
     global player_iface
     while True:
@@ -41,6 +48,7 @@ def initMetadata():
         break
     GLib.MainLoop().run()
 
+# Function to control the song state
 def mediaControl(new_state):
     global state
     if new_state == 'paused':
@@ -59,6 +67,7 @@ def mediaControl(new_state):
 def mediaGetState():
     return state
 
+# Reads song metadata when it changes
 def onMetadataUpdate(interface, changed, invalidated):
     if interface != 'org.bluez.MediaPlayer1':
         return
